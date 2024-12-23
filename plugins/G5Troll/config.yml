@@ -1,0 +1,439 @@
+general:
+  changerInfo: true
+  executed: '&6%troll.name%&a executed!'
+  offlineError: '&cYour target is offline!'
+  warningsEnabled: true
+  warn: '&cThis troll can: %troll.warnings%'
+  warnings:
+    kill: kill player
+    world: change world
+    inventory: change inventory
+  noMenu:
+  - ' '
+  - '&cYou can''t use it in menu! :C'
+  - '&aUse: %troll.usage%'
+  close: '&cClose'
+  nextPage: '&eNext Page'
+  previousPage: '&ePrevious Page'
+  chooseTroll: '&aChoose Troll!'
+  choosePlayer: '&bChoose Player!'
+changer:
+  Firework:
+    name: Firework
+    description: Launch the player into the air!
+    usage: /troll execute Firework {player} {power}
+    icon: FIREWORK_ROCKET
+    default_arg1: '3.5'
+  Spin:
+    name: Spin
+    description: Spin the player!
+    usage: /troll execute Spin {player} {seconds} {power}
+    icon: GOLDEN_APPLE
+    default_arg1: '6'
+    default_arg2: '3'
+  Burn:
+    name: Burn
+    description: Burn player
+    usage: /troll execute Burn {player} {seconds}
+    icon: FLINT_AND_STEEL
+    default_arg1: '5'
+  Back:
+    name: Back
+    description: Return the player to his old location.
+    usage: /troll execute Back {player} {seconds}
+    icon: BONE_MEAL
+    default_arg1: '2'
+  Cage:
+    name: Cage
+    description: Catch a player in a bedrock cage
+    usage: /troll execute Cage {player}
+    icon: BEDROCK
+  Anvil:
+    name: Anvil
+    description: Drop an anvil on a player
+    usage: /troll execute Anvil {player} {height}
+    icon: ANVIL
+    default_arg1: '20'
+  Lightning:
+    name: Lightning
+    description: Hit player using lightning
+    usage: /troll execute Lightning {player}
+    icon: YELLOW_WOOL
+  FakeTNT:
+    name: FakeTNT
+    description: Summon fake tnt next to player
+    usage: /troll execute FakeTNT {player}
+    icon: TNT
+  Pumpkin:
+    name: Pumpkin
+    description: Put the pumpkin on the player
+    usage: /troll execute Pumpkin {player}
+    icon: CARVED_PUMPKIN
+  RandomizeInventory:
+    name: RandomizeInventory
+    description: Randomize items in inventory
+    usage: /troll execute RandomizeInventory {player}
+    icon: MELON_SEEDS
+  ExplosionSound:
+    name: ExplosionSound
+    description: plays explosion sound next to player
+    usage: /troll execute ExplosionSound {player}
+    icon: TNT
+  CreeperSound:
+    name: CreeperSound
+    description: plays creeper sound next to player
+    usage: /troll execute CreeperSound {player}
+    icon: CREEPER_HEAD
+  Hit:
+    name: Hit
+    description: Hit player
+    usage: /troll execute Hit {player}
+    icon: STONE_SWORD
+  Hunger:
+    name: Hunger
+    description: Set the food level.
+    usage: /troll execute Hunger {player} {FoodLevel}
+    icon: BREAD
+    default_arg1: '0'
+  InventoryDrop:
+    name: InventoryDrop
+    description: Drops inventory
+    usage: /troll execute InventoryDrop {player}
+    icon: WHEAT_SEEDS
+  FakeBlocks:
+    name: FakeBlocks
+    description: Creates random fake blocks around the player.
+    usage: '/troll execute FakeBlocks {player} {range} {count} '
+    icon: BAMBOO
+    default_arg1: '25'
+    default_arg2: '80'
+  Noob:
+    name: Noob
+    description: creates a sign saying "noob"
+    usage: /troll execute Noob {player}
+    icon: OAK_SIGN
+  FakeDiamondOre:
+    name: FakeDiamondOre
+    description: changes stone to diamond ore
+    usage: '/troll execute FakeDiamondOre {player} {range} {percent} '
+    icon: DIAMOND_ORE
+    default_arg1: '25'
+    default_arg2: '50'
+  Cobweb:
+    name: Cobweb
+    description: slow down the player with the web
+    usage: /troll execute Cobweb {player}
+    icon: COBWEB
+  Rotate:
+    name: Rotate
+    description: rotates the player
+    usage: /troll execute Rotate {player} {YAW} {PITCH}
+    icon: APPLE
+    default_arg1: '90'
+    default_arg2: '0'
+  ScaryRandomTeleport:
+    name: ScaryRandomTeleport
+    description: Teleports player with amazing effects
+    usage: /troll execute ScaryRandomTeleport {player} {range}
+    icon: BLACK_WOOL
+    default_arg1: '50'
+  Funeral:
+    name: Funeral
+    description: Knocks the player to the ground.
+    usage: /troll execute Funeral {player}
+    icon: SAND
+  AntiMiner:
+    name: AntiMiner
+    description: kicks the player out of the hole
+    usage: /troll execute AntiMiner {player}
+    icon: GOLDEN_PICKAXE
+  Sheep:
+    name: Sheep
+    description: spawns sheep with a random color.
+    usage: /troll execute Sheep {player} {sheepCount}
+    icon: WHITE_WOOL
+    default_arg1: '5'
+  EndermanJumpscare:
+    name: EndermanJumpscare
+    description: Enderman jumpscare... :)
+    usage: /troll execute EndermanJumpscare {player}
+    icon: ENDERMAN_SPAWN_EGG
+  MobHat:
+    name: MobHat
+    description: Places a entity on the player's head.
+    usage: /troll execute MobHat {player} {MobType}
+    icon: PIG_SPAWN_EGG
+    default_arg1: PIG
+  MobRide:
+    name: MobRide
+    description: the player will start riding the mob.
+    usage: /troll execute MobRide {player} {MobType}
+    icon: COW_SPAWN_EGG
+    default_arg1: COW
+  DirtInventory:
+    name: DirtInventory
+    description: Drops all items and fills inventory with dirt.
+    usage: /troll execute DirtInventory {player}
+    icon: DIRT
+  AirShots:
+    name: AirShots
+    description: shoots arrows from the air.
+    usage: /troll execute AirShots {player} {seconds}
+    icon: ARROW
+    default_arg1: '10'
+  BlockRain:
+    name: BlockRain
+    description: shoots blocks into the air.
+    usage: /troll execute BlockRain {player} {blockCount} {blockType} {power}
+    icon: ORANGE_WOOL
+    default_arg1: '25'
+    default_arg2: DIRT
+    default_arg3: '1.0'
+  Swap:
+    name: Swap
+    description: swaps 2 players positions.
+    usage: /troll execute Swap {player} {player}
+    icon: COD
+    default_arg1: '{player}'
+  Void:
+    name: Void
+    description: destroys all blocks under the player.
+    usage: /troll execute Void {player}
+    icon: BEDROCK
+  Message:
+    name: Message
+    description: Sending message as a player.
+    usage: /troll execute Message {player} [message]
+    icon: OAK_BUTTON
+    default_arg1: I am noob.
+  Nuke:
+    name: Nuke
+    description: Creates explosion.
+    usage: /troll execute Nuke {player} {power}
+    icon: FIRE_CHARGE
+    default_arg1: '20'
+  FriendlyCreeper:
+    name: FriendlyCreeper
+    description: Spawn creeper with 0 explosion radius.
+    usage: /troll execute FriendlyCreeper {player} {count}
+    icon: CREEPER_HEAD
+    default_arg1: '1'
+  Hacker:
+    name: Hacker
+    description: The player becomes a cheater.
+    usage: /troll execute Hacker {player} {seconds}
+    icon: DIAMOND_SWORD
+    default_arg1: '10'
+  GuardianJumpscare:
+    name: GuardianJumpscare
+    description: Guardian Jumpscare... :)
+    usage: /troll execute GuardianJumpscare {player}
+    icon: GLOWSTONE
+  FatBoy:
+    name: FatBoy
+    description: the player gets heavier
+    usage: /troll execute FatBoy {player} {seconds}
+    icon: ANVIL
+    default_arg1: '15'
+  SeeInventory:
+    name: SeeInventory
+    description: see player inventory.
+    usage: /troll execute SeeInventory {player}
+    icon: STICK
+  Cloud:
+    name: Cloud
+    description: Cloud will appear on the player
+    usage: /troll execute Cloud {player} {seconds}
+    icon: WHITE_WOOL
+    default_arg1: '15'
+  ServerHacked:
+    name: ServerHacked
+    description: Fake Hacker Attack
+    usage: /troll execute ServerHacked {player}
+    icon: BOW
+  InvisibleSpider:
+    name: InvisibleSpider
+    description: Spawn invisible spider
+    usage: /troll execute InvisibleSpider {player} {count}
+    icon: SPIDER_EYE
+    default_arg1: '1'
+  AggressiveWolf:
+    name: AggressiveWolf
+    description: Spawn aggressive wolf
+    usage: /troll execute AggressiveWolf {player} {count}
+    icon: BONE
+    default_arg1: '1'
+  BigCactus:
+    name: BigCactus
+    description: Creates a cactus all the way to the top
+    usage: /troll execute BigCactus {player}
+    icon: CACTUS
+  FakeDeath:
+    name: FakeDeath
+    description: Sends the death screen to the player.
+    usage: /troll execute FakeDeath {player}
+    icon: SKELETON_SKULL
+  FakeDamage:
+    name: FakeDamage
+    description: Fake beats the player to 1HP.
+    usage: /troll execute FakeDamage {player}
+    icon: IRON_SWORD
+  EndScreen:
+    name: EndScreen
+    description: Shows the player a end screen.
+    usage: /troll execute EndScreen {player}
+    icon: DRAGON_EGG
+  DemoScreen:
+    name: DemoScreen
+    description: Shows the player a demo screen.
+    usage: /troll execute DemoScreen {player}
+    icon: SUNFLOWER
+  LoadingScreen:
+    name: LoadingScreen
+    description: Shows the player a loading screen.
+    usage: /troll execute LoadingScreen {player} {seconds}
+    icon: CHEST
+    default_arg1: '10'
+  FakeCreative:
+    name: FakeCreative
+    description: Fake creative for player.
+    usage: /troll execute FakeCreative {player} {seconds}
+    icon: BRICKS
+    default_arg1: '30'
+  FakeHunger:
+    name: FakeHunger
+    description: Falsely sets the player's food level to 0.
+    usage: /troll execute FakeHunger {player}
+    icon: ROTTEN_FLESH
+  ChangeHeldSlot:
+    name: ChangeHeldSlot
+    description: Change held item slot.
+    usage: /troll execute ChangeHeldSlot {player} {slot}
+    icon: GOLDEN_AXE
+    default_arg1: '0'
+  FakeExperience:
+    name: FakeExperience
+    description: Falsely sets the player's experience.
+    usage: /troll execute FakeExperience {player} {level}
+    icon: EXPERIENCE_BOTTLE
+    default_arg1: '69'
+  NormalRandomTeleport:
+    name: NormalRandomTeleport
+    description: Randomly teleports the player
+    usage: /troll execute NormalRandomTeleport {player} {range}
+    icon: ENDER_PEARL
+    default_arg1: '50'
+  RandomRotate:
+    name: RandomRotate
+    description: Randomly rotates the player
+    usage: /troll execute RandomRotate {player}
+    icon: CAKE
+  HeadDance:
+    name: HeadDance
+    description: Randomly rotates the player head for x seconds.
+    usage: /troll execute HeadDance {player} {seconds}
+    icon: ZOMBIE_HEAD
+    default_arg1: '5'
+  SnowGolemEffect:
+    name: SnowGolemEffect
+    description: Creates snow under the player.
+    usage: /troll execute SnowGolemEffect {player} {seconds}
+    icon: SNOW_BLOCK
+    default_arg1: '10'
+  FlamingBootsEffect:
+    name: FlamingBootsEffect
+    description: Creates fire under the player.
+    usage: /troll execute FlamingBootsEffect {player} {seconds}
+    icon: LAVA_BUCKET
+    default_arg1: '10'
+  NoGravity:
+    name: NoGravity
+    description: The player will lose their gravity.
+    usage: /troll execute NoGravity {player} {seconds}
+    icon: PAPER
+    default_arg1: '10'
+  EggShooter:
+    name: EggShooter
+    description: Shoots eggs into the air.
+    usage: /troll execute NoGravity {player} {seconds} {GTech1-speed}
+    icon: EGG
+    default_arg1: '10'
+    default_arg2: '5'
+  Spam:
+    name: Spam
+    description: Spam player chat.
+    usage: /troll execute Spam {player} [message]
+    icon: GOLDEN_SHOVEL
+    default_arg1: '&cYou are noob'
+  Venom:
+    name: Venom
+    description: Attracts all entity within the selected range.
+    usage: /troll execute Venom {player} {seconds} {range}
+    icon: ENDER_EYE
+    default_arg1: '15'
+    default_arg2: '10'
+  WaterCage:
+    name: WaterCage
+    description: Drown a player in this trap.
+    usage: /troll execute WaterCage {player}
+    icon: WATER_BUCKET
+  FlowerBootsEffect:
+    name: FlowerBootsEffect
+    description: Creates flowers under the player.
+    usage: /troll execute FlowerBootsEffect {player} {seconds}
+    icon: RED_TULIP
+    default_arg1: '10'
+  RollingHeldSlot:
+    name: RollingHeldSlot
+    description: Rolling Held Slot
+    usage: /troll execute RollingHeldSlot {player} {seconds} {GTech1-speed}
+    icon: HOPPER
+    default_arg1: '10'
+    default_arg2: '10'
+  Alone:
+    name: Alone
+    description: Make every other player invisible
+    usage: /troll execute Alone {player} {seconds}
+    icon: WHEAT
+    default_arg1: '30'
+  BugChunk:
+    name: BugChunk
+    description: Blocks close to the player will cease to exist.
+    usage: /troll execute BugChunk {player}
+    icon: FLINT
+  FalseAntiCheatBan:
+    name: FalseAntiCheatBan
+    description: backs the player 10 times and then kick them out.
+    usage: /troll execute FalseAntiCheatBan {player}
+    icon: COMMAND_BLOCK
+  FakeLava:
+    name: FakeLava
+    description: creates false lava in player
+    usage: /troll execute FakeLava {player}
+    icon: LAVA_BUCKET
+  BigBamboo:
+    name: BigBamboo
+    description: Creates a bamboo all the way to the top
+    usage: /troll execute BigBamboo {player}
+    icon: BAMBOO
+  BigSugarCane:
+    name: BigSugarCane
+    description: Creates a sugar cane all the way to the top
+    usage: /troll execute BigSugarCane {player}
+    icon: SUGAR_CANE
+  FakeOp:
+    name: FakeOp
+    description: Sends op message.
+    usage: /troll execute FakeOp {player}
+    icon: DIRT
+  Control:
+    name: Control
+    description: Control player.
+    usage: /troll execute Control {player}
+    icon: COMPASS
+  Freeze:
+    name: Freeze
+    description: Freeze player
+    usage: /troll execute Firework {player} {seconds}
+    icon: ICE
+    default_arg1: '10'
